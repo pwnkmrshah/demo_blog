@@ -33,8 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Make errors better looking
-gem 'better_errors', '~> 2.6'
+
 
 #Bulma CSS
 gem 'bulma-rails', '~> 0.8.0'
@@ -61,9 +60,11 @@ group :development do
   # Restart Rails when things change in your app
   gem 'guard-rails', '~> 0.7.2'
 
+  # Make errors better looking
+  gem 'better_errors', '~> 2.6'
 
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 
 end
 
